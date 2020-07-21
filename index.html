@@ -1,13 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Services</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Services</title>
+    </head>
+
+    <body>
+        <nav>
+          <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#services">services</a>
+                <a href="#contact">contact</a>
+              </div>
+          </div>
+          
+          <div class="nav-links">
+            <span onclick="openNav()">&#9776;</span> 
+            <ul>
+              <li>
+                <a href="#home">home</a>
+              </li>
+              <li>
+                <a href="#about">about</a>
+              </li>
+              <li>
+                <a href="#services">services</a>
+              </li>
+              <li>
+                <a href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div id="home" class="hero">
+          <div class="container">
+            <p>websites built to your specifications</p>
+            <h1> beautiful simplicity agile <span>development</span></h1>  
+          </div>
+          <div class="bottom-img">
+            <img src="./img/bottom.svg" alt="">
+          </div>
+          <a href="#about" class="scroll-down">
+            <div class="mouse"><span></span></div>
+            <div class="arrow"><span></span></div>
+          </a>
+        </div>
+  
+        <div id="about">
+          <div class="feature">
+            <h1>From big to small clients, two things I always promise:</h1>
+            <div class="container">
+              <div class="promise">
+                <h2><span>1</span> Designs you will love</h2>
+                <p>Web development is what I love doing and delivering results that you are happy with. We'll work as a team and we'll bring your vision into reality!</p>
+              </div>
+              <div class="promise">
+                <h2><span>2</span> A healthy freelance relationship</h2>
+                <p>No dramas or difficult relationships. I'm here to make your life easier, solve problems and help you grow your business.</p>
+              </div>
+            </div>
+            <a href="#services" class="scroll-down">
+              <div class="mouse"><span></span></div>
+              <div class="arrow"><span></span></div>
+            </a>
+          </div>
+        </div>
+      
+        <div id="services">
+          <div class="cards">
+
+          </div>
+        </div>
     
-</body>
-<script src="js/main.js"></script>
+    </body>
+    <script src="./js/main.js"></script>  
 </html>
