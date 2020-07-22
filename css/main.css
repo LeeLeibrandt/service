@@ -271,7 +271,7 @@ nav .nav-links ul :hover {
 }
 
 #services {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 5rem 1rem 0 1rem;
   text-align: center;
@@ -379,6 +379,51 @@ nav .nav-links ul :hover {
   background: linear-gradient(45deg, #f7fe72 30%, #f4e76e 100%);
 }
 
+.information {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+  margin: 3rem 0;
+}
+
+.information .info-main {
+  width: 100%;
+  background: linear-gradient(40deg, transparent 50%, #f4e76e 50%);
+  border-radius: 10px;
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.information .info-main .info {
+  width: 50%;
+  height: 100%;
+  padding-left: 2rem;
+}
+
+.information .info-main .info h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.information .info-main .info h3 span {
+  background: #9affdd;
+  padding: 0 1rem;
+}
+
+.information .info-main .info p {
+  margin: .5rem 0;
+  letter-spacing: 1px;
+}
+
+.information .info-main img {
+  width: 50%;
+  height: 300px;
+  padding: 0 2rem;
+}
+
 #products {
   width: 100%;
   height: 100vh;
@@ -389,11 +434,13 @@ nav .nav-links ul :hover {
   font-size: 30px;
   font-weight: 900;
   color: #9affdd;
-  margin-top: 3rem;
 }
 
 #products .title span {
   font-weight: 400;
+  color: #4e4e4e;
+  padding: 0 1rem;
+  background: linear-gradient(45deg, #f7fe72 30%, #f4e76e 100%);
 }
 
 #products .work-fearured {
@@ -464,7 +511,7 @@ nav .nav-links ul :hover {
 }
 
 #products .work-fearured .works .image-slides .btn-prev {
-  left: -1px;
+  left: -2.5px;
   border-radius: 0 0 0 28px;
 }
 
@@ -521,7 +568,7 @@ nav .nav-links ul :hover {
 }
 
 #developer .main-content .main-head p {
-  line-height: 1rem;
+  line-height: 1.2rem;
   letter-spacing: 1px;
 }
 
