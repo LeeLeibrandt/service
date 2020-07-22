@@ -3,7 +3,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /*background: linear-gradient(45deg,#f7fe72 30%,#f4e76e 100%);*/
 }
 
 html {
@@ -355,7 +354,7 @@ nav .nav-links ul :hover {
   font-size: 12px;
   letter-spacing: 1.3px;
   text-transform: uppercase;
-  background: linear-gradient(45deg, #9affdd, #9affdd);
+  background: linear-gradient(45deg, #fff, #9affdd);
   cursor: pointer;
 }
 
@@ -378,6 +377,38 @@ nav .nav-links ul :hover {
 
 #services .container .main .btn:hover {
   background: linear-gradient(45deg, #f7fe72 30%, #f4e76e 100%);
+}
+
+#products {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/device-s-fs8.8e7097d5.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#products .work-featured {
+  max-width: 280px;
+  height: 80%;
+}
+
+#products .work-featured img {
+  width: 100%;
+  height: 100%;
 }
 
 @-webkit-keyframes scroll {
