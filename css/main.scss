@@ -1,21 +1,24 @@
 $dark:rgb(78, 78, 78);
 $light: #fff;
 $main: rgb(154, 255, 221);
-$orange: rgb(255, 196, 87);
+$orange: #f7fe72;
 $secondary: rgb(149, 255, 241);
+$neutral : hsl(236, 72%, 79%);
+$neutrals : hsl(237, 63%, 64%);
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*background: linear-gradient(45deg,#f7fe72 30%,#f4e76e 100%);*/
 }
 html{
     scroll-behavior: smooth;
-    color: $dark;
-}
+} 
 body{
     max-width: 100vw;
     font-family: sans-serif;
+    color: $dark;
 }
 ::-moz-selection {
     background-color: $main;
@@ -37,13 +40,13 @@ body{
     .mouse{
         width: 20px;
         height: 45px;
-        border: 1px solid $light;
+        border: 1px solid $dark;
         border-radius: 2rem;
         display: flex;
         span{
             width: 10px;
             height: 10px;
-            background-color: $light;
+            background-color: $dark;
             display: block;
             border-radius: 50%;
             margin: auto;
@@ -55,8 +58,8 @@ body{
         width: 10px;
         height: 10px;
         border: 1px solid transparent;
-        border-right-color: #fff;
-        border-bottom-color: #fff;
+        border-right-color: $dark;
+        border-bottom-color: $dark;
         transform: rotate(45deg); 
         animation: arrow 1s linear alternate infinite;
     }
@@ -129,18 +132,18 @@ nav{
     }
 }
 
-.hero{
+#home{
     height: 100vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     .container{
         height: 80%;
         text-align: center;
         padding: 0 20rem;
         color: $dark;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         p{
             font-size: 25px;
             font-weight: 400;
@@ -152,6 +155,7 @@ nav{
             font-size: 60px;
             font-weight: 900;
             margin: 1rem 0;
+            width: 100%;
             span{
                 color: $main;
             }
@@ -169,8 +173,8 @@ nav{
 
 #about{
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(45deg, #0077ff, #07d89d);
+    height: 90vh;
+    background: linear-gradient(360deg, #fff, $main);
 
     .feature{
         height: 80vh;
@@ -204,7 +208,7 @@ nav{
                         padding: .4rem .7rem;
                         border-radius: 50%;
                         background-color: $orange;
-                        color: $light;
+                        color: $dark;
                     }
                 }
                 p{
@@ -219,17 +223,90 @@ nav{
    
         }
     }
-}
+}   
+
 
 #services{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
-    background-color: $orange;
-    .cards{
+    padding: 5rem 1rem 0 1rem;
+    text-align: center;
+    h1{
+        font-size: 40px;
+        font-weight: 800;
+        padding: 0 15rem 5rem 15rem;
+        span{
+            background: $main;
+            color: $light;
+        }
+    }
+    .container{
         width: 100%;
-        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .line{
+            border-bottom: 1px solid $dark;
+        }
+        .space{
+            padding: 1rem 0;
+        }
+        .cards{
+            width: 270px;
+            height: 350px;
+            text-align: center;
+            padding: 1.2rem;
+            border-radius: 5px;
+            /*box-shadow: 0 0 20px $neutral;*/
+            .title{
+                width: 100%;
+                font-size: 20px;
+                font-weight: 500;
+            }
+            .price{
+                width: 100%;
+                font-size: 50px;
+                font-weight: 900;
+            }
+            .details{
+                width: 100%;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .btn{
+                width: 100%;
+                height: 35px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: $dark;
+                font-weight: 500;
+                font-size: 12px;
+                letter-spacing: 1.3px;
+                text-transform: uppercase;
+                background: linear-gradient(45deg, $main, $main);
+                cursor: pointer;
+            }.btn:hover{
+                background: linear-gradient(45deg,#f7fe72 30%,#f4e76e 100%);
+            }
+        }
+        .main{
+            height: 370px;
+            background: linear-gradient(45deg, $light, $main);
+            .line{
+                border-bottom: 1px solid $light;
+            }
+            .btn{
+                background: linear-gradient(45deg,#f7fe72 30%,#f4e76e 100%);
+                
+            }.btn:hover{
+                background: linear-gradient(45deg,#f7fe72 30%,#f4e76e 100%);
+               
+            }
+        }
     }
 }
+
 
 @keyframes scroll{
     0%{
@@ -257,5 +334,22 @@ nav{
     }
     100%{
         opacity: 1;
+    }
+}
+@media screen and (max-width:1000px){
+    #home{
+        .container{
+            h1{
+                padding: 0 10rem;
+            }
+        }
+    }
+
+    #about{
+
+    }
+
+    #services{
+
     }
 }
