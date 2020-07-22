@@ -78,6 +78,23 @@ body {
           animation: arrow 1s linear alternate infinite;
 }
 
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav span {
+  font-size: 30px;
+  margin-right: 2rem;
+  position: fixed;
+  color: #9affdd;
+  cursor: pointer;
+}
+
 nav .overlay {
   height: 0%;
   width: 100%;
@@ -116,40 +133,6 @@ nav .overlay .closebtn {
   font-size: 60px;
   text-decoration: none;
   color: #4e4e4e;
-}
-
-nav .nav-links {
-  position: absolute;
-  right: 0;
-  margin-right: 3rem;
-  font-weight: 400;
-}
-
-nav .nav-links span {
-  font-size: 30px;
-  cursor: pointer;
-}
-
-nav .nav-links ul {
-  position: fixed;
-  z-index: 1;
-}
-
-nav .nav-links ul li {
-  list-style: none;
-  font-size: 17px;
-  margin: .2rem;
-  letter-spacing: 1px;
-  font-weight: 500;
-}
-
-nav .nav-links ul li a {
-  text-decoration: none;
-  color: #4e4e4e;
-}
-
-nav .nav-links ul :hover {
-  color: #9affdd;
 }
 
 #home {
@@ -427,6 +410,7 @@ nav .nav-links ul :hover {
 #products {
   width: 100%;
   height: 100vh;
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -578,6 +562,121 @@ nav .nav-links ul :hover {
   padding: 3rem;
 }
 
+#contact {
+  width: 100%;
+  height: 100vh;
+  background: #161851;
+}
+
+#contact .foot {
+  width: 100%;
+  height: 35%;
+  text-align: center;
+}
+
+#contact .foot img {
+  height: 100%;
+  margin: 2rem 0;
+}
+
+#contact .footer {
+  width: 100%;
+  height: 55%;
+  padding: 3rem;
+  color: #c7c7c7;
+}
+
+#contact .footer h1 {
+  color: transparent;
+  font-size: 40px;
+  letter-spacing: 1px;
+  -webkit-text-stroke: 1px #f7fe72;
+}
+
+#contact .footer p {
+  font-weight: 200;
+  line-height: 1.3rem;
+}
+
+#contact .footer .spacer {
+  width: 30px;
+  height: 5px;
+  margin-bottom: 1rem;
+  border: 1px solid #f7fe72;
+}
+
+#contact .footer .foot-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#contact .footer .foot-content .aboutus {
+  width: 33%;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+#contact .footer .foot-content .findus {
+  width: 33%;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+#contact .footer .foot-content .findus .link {
+  margin: 1rem 0;
+}
+
+#contact .footer .foot-content .findus .link h6 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: .2rem;
+}
+
+#contact .footer .foot-content .social {
+  width: 33%;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+#contact .back {
+  width: 100%;
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .back .mouse-up {
+  width: 20px;
+  height: 45px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+}
+
+#contact .back .mouse-up span {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  display: block;
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  top: 10px;
+  -webkit-animation: scroll 1.2s linear alternate infinite;
+          animation: scroll 1.2s linear alternate infinite;
+}
+
 @-webkit-keyframes scroll {
   0% {
     opacity: 0;
@@ -641,8 +740,12 @@ nav .nav-links ul :hover {
 }
 
 @media screen and (max-width: 1000px) {
-  #home .container h1 {
-    padding: 0 10rem;
+  #home .container {
+    padding: 0;
+  }
+  #about {
+    width: 100%;
+    height: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
