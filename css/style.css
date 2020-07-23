@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  color: #4e4e4e;
+}
+
+::-moz-selection {
+  background-color: #9affdd;
+  color: #fff;
+}
+
+::selection {
+  background-color: #9affdd;
+  color: #fff;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav span {
+  font-size: 30px;
+  margin-right: 2rem;
+  position: fixed;
+  color: #9affdd;
+  cursor: pointer;
+}
+
+nav .overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #9affdd;
+  overflow-y: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+nav .overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+nav .overlay .overlay-content a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  text-decoration: none;
+  color: #4e4e4e;
+}
+
+.price-cards {
+  width: 100%;
+  height: 100%;
+  padding: 3rem;
+}
+
+.price-cards .price-heading p {
+  width: 50%;
+  margin: 1rem 0;
+  line-height: 1.3rem;
+  letter-spacing: .8px;
+}
+
+.price-cards .price-heading p span {
+  background: #9affdd;
+  padding: 0 .5rem;
+}
+
+.price-cards .price-card {
+  width: 100%;
+}
+
+.price-cards .price-card .price-details {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4rem;
+  background: linear-gradient(45deg, #fff 30%, #9affdd 70%);
+}
+
+.price-cards .price-card .price-details .details {
+  width: 100%;
+  height: 100%;
+  padding: 3rem 3rem 3rem 0;
+}
+
+.price-cards .price-card .price-details .details h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.price-cards .price-card .price-details .details h6 {
+  font-size: 19px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.price-cards .price-card .price-details .details h6 span {
+  background: #f7fe72;
+}
+
+.price-cards .price-card .price-details .details p {
+  font-weight: 200;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.price-cards .price-card .price-details img {
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.price-cards .price-card .price-details:nth-child(2) {
+  background: linear-gradient(300deg, #fff 40%, #9affdd 60%);
+}
+
+.price-cards .price-card .price-details:nth-child(2) .details {
+  padding-left: 2rem;
+}
+
+.price-cards .contact {
+  width: 100%;
+  text-align: center;
+}
+
+.price-cards .contact .btn {
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  border: transparent;
+  background: linear-gradient(45deg, #f7fe72 30%, #f4e76e 100%);
+}
+
+.price-cards .contact .btn:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 800px) {
+  .price-cards {
+    width: 100%;
+    height: 100%;
+  }
+  .price-cards .price-heading p {
+    width: 100%;
+  }
+  .price-cards .price-card {
+    text-align: center;
+  }
+  .price-cards .price-card .price-details {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price-cards .price-card .price-details img {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .price-cards .price-card .price-details .details {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .price-cards .price-card .price-details .details h1, .price-cards .price-card .price-details .details p {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

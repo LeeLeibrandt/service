@@ -319,6 +319,10 @@ nav .overlay .closebtn {
   font-weight: 500;
 }
 
+#services .container .cards a {
+  text-decoration: none;
+}
+
 #services .container .cards .btn {
   width: 100%;
   height: 35px;
@@ -622,7 +626,7 @@ nav .overlay .closebtn {
   width: 100%;
   height: 55%;
   padding: 3rem;
-  color: #c7c7c7;
+  color: #d8d8d8;
 }
 
 #contact .footer h1 {
@@ -634,7 +638,7 @@ nav .overlay .closebtn {
 
 #contact .footer p {
   font-weight: 200;
-  line-height: 1.3rem;
+  line-height: 1.4rem;
 }
 
 #contact .footer .spacer {
@@ -654,6 +658,12 @@ nav .overlay .closebtn {
   width: 33%;
   height: 100%;
   padding: 0 1rem;
+}
+
+#contact .footer .foot-content .aboutus p span {
+  background: #f7fe72;
+  color: #4e4e4e;
+  padding: 0 .5rem;
 }
 
 #contact .footer .foot-content .findus {
@@ -676,6 +686,13 @@ nav .overlay .closebtn {
   width: 33%;
   height: 100%;
   padding: 0 1rem;
+}
+
+#contact .footer .foot-content .social i {
+  color: #f7fe72;
+  font-size: 3rem;
+  margin: .5rem;
+  cursor: pointer;
 }
 
 #contact .back {
