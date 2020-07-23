@@ -396,8 +396,9 @@ nav{
                     animation-name: fade;
                     animation-duration: 1.5s;
                     img{
-                        width: 100%;
+                        max-width: 275px;
                         height: 550px;
+                        padding: 5rem .4rem 10rem 0;
                     }
                 }
             }

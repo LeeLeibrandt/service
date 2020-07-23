@@ -511,8 +511,9 @@ nav .overlay .closebtn {
 }
 
 #products .work-fearured .works .image-slides .fades img {
-  width: 100%;
+  max-width: 275px;
   height: 550px;
+  padding: 5rem .4rem 10rem 0;
 }
 
 #developer {
