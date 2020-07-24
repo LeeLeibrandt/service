@@ -179,6 +179,17 @@ nav .overlay .closebtn {
   color: #9affdd;
 }
 
+#home .container .real-time {
+  position: absolute;
+  top: 0;
+  padding-top: 1rem;
+}
+
+#home .container .real-time span {
+  background: #9affdd;
+  padding: .2rem .5rem;
+}
+
 #home .bottom-img {
   width: 100%;
   height: 20%;

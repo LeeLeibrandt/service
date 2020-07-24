@@ -8,8 +8,7 @@
         <link rel="stylesheet" href="./css/main.css">
         <title>Services</title>
     </head>
-
-    <body>
+    <body onload="startTime()">
         <!--<nav>
           <div id="myNav" class="overlay">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -25,6 +24,9 @@
         
         <div id="home" class="hero">
           <div class="container" data-aos="fade-down" data-aos-duration="1500">
+            <div class="real-time">
+              <span id="txt"></span>
+            </div>
             <p>websites built to your specifications</p>
             <h1>beautiful simplicity agile <span>development</span></h1>  
           </div>
@@ -36,7 +38,7 @@
             <div class="arrow"><span></span></div>
           </a>
         </div>
-  
+
         <div id="about">
           <div class="feature">
             <h1 data-aos="fade-right" data-aos-duration="1500">From big to small clients, two things I always promise:</h1>

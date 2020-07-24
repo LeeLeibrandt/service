@@ -138,6 +138,15 @@ nav{
                 color: $main;
             }
         }
+        .real-time{
+            position: absolute;
+            top: 0;
+            padding-top: 1rem;
+            span{
+                background: $main;
+                padding: .2rem .5rem;
+            }
+        }
     }
     .bottom-img{
         width: 100%;
